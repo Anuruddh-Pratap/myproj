@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_app1/Calculator.dart';
+import 'package:flutter_app1/ProfilePage.dart';
 import 'BottomSamplePages.dart';
 import 'MainDrawer.dart';
 import 'BottomNAvigationBar.dart';
@@ -18,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   var _pages = [
     HomePage(),
     Calculator(),
-    ServicePage(),
+    ProfilePage(),
     AboutPage(),
     ServicePage(),
   ];
@@ -44,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 BottomNavigationBarItem(
                     icon: Icon(Icons.info_rounded), label: "BMI Calc"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.design_services), label: "My Profile"),
+                    icon: Icon(Icons.account_box_rounded), label: "My Profile"),
                 // BottomNavigationBarItem(
                 //     icon: Icon(Icons.design_services), label: "Services"),
                 // BottomNavigationBarItem(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app1/Developer.dart';
 import 'package:flutter_app1/HelpScreen.dart';
+import 'package:flutter_app1/contact.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);
@@ -44,11 +45,10 @@ class MainDrawer extends StatelessWidget {
             leading: Icon(Icons.contacts_sharp),
             title: Text("Contact"),
             trailing: Icon(Icons.arrow_forward_ios),
-          ),
-          ListTile(
-            leading: Icon(Icons.logout_rounded),
-            title: Text("Log-Out"),
-            trailing: Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => (contact()))));
+            },
           ),
         ],
       ),
