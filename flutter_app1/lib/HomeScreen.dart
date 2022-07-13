@@ -19,8 +19,8 @@ class _HomeScreenState extends State<HomeScreen> {
   var _pages = [
     HomePage(),
     Calculator(),
-    ProfilePage(),
     AboutPage(),
+    ProfilePage(),
     ServicePage(),
   ];
   @override
@@ -45,7 +45,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 BottomNavigationBarItem(
                     icon: Icon(Icons.info_rounded), label: "BMI Calc"),
                 BottomNavigationBarItem(
+                    icon: Icon(Icons.info_rounded),
+                    label: "Calorie Intake Calc"),
+                BottomNavigationBarItem(
                     icon: Icon(Icons.account_box_rounded), label: "My Profile"),
+
                 // BottomNavigationBarItem(
                 //     icon: Icon(Icons.design_services), label: "Services"),
                 // BottomNavigationBarItem(

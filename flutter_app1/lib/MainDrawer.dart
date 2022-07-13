@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app1/About.dart';
 import 'package:flutter_app1/Developer.dart';
 import 'package:flutter_app1/HelpScreen.dart';
 import 'package:flutter_app1/contact.dart';
@@ -28,19 +29,22 @@ class MainDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.info_outline_rounded),
-            title: Text("About"),
-            trailing: Icon(Icons.arrow_forward_ios),
-          ),
-          ListTile(
-            leading: Icon(Icons.account_circle_sharp),
-            title: Text("Developer"),
-            trailing: Icon(Icons.arrow_forward_ios),
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => (Developer()))));
-            },
-          ),
+              leading: Icon(Icons.info_outline_rounded),
+              title: Text("About"),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: ((context) => (About()))));
+              }),
+          // ListTile(
+          //   leading: Icon(Icons.account_circle_sharp),
+          //   title: Text("Developer"),
+          //   trailing: Icon(Icons.arrow_forward_ios),
+          //   onTap: () {
+          //     Navigator.push(context,
+          //         MaterialPageRoute(builder: ((context) => (Developer()))));
+          //   },
+          // ),
           ListTile(
             leading: Icon(Icons.contacts_sharp),
             title: Text("Contact"),

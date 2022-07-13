@@ -29,7 +29,13 @@ class _CalculatorState extends State<Calculator> {
         ),
       ),
       body: Container(
-        margin: EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: NetworkImage(
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Farp6podW7WbTtQRExAtQFJ3nO_42TwPRgJgdldPtG3iaqm1yBvvJMTX4Kb8i9zIvKY&usqp=CAU"),
+                fit: BoxFit.cover,
+                colorFilter: ColorFilter.mode(
+                    Colors.black.withOpacity(0.1), BlendMode.darken))),
         child: ListView(
           children: [
             Center(
