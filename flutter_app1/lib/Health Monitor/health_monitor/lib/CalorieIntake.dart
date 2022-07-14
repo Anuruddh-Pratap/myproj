@@ -179,7 +179,7 @@ class _CalorieIntakeState extends State<CalorieIntake> {
     // double term = double.parse(termController.text);
 
     double TotalCalorie =
-        (Current * 2.45 * 15) + ((Final - Current) * 2.45 * 250);
+        (Current * 2.45 * 15) + (((Final - Current) * 2.45) * 250);
 
     String result = 'Your Daily Calorie Goals are $TotalCalorie calories';
     return result;
